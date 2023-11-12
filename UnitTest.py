@@ -22,5 +22,8 @@ class TestMiClase(unittest.TestCase):
         self.assertTrue(self.mi_clase_obj.VerificaListaCanciones(["Canción 1", "Canción 2", "Canción 3"]))
         self.assertFalse(self.mi_clase_obj.VerificaListaCanciones(["Canción 1", None, "Canción 3"]))
 
+    def test_Encuentra(self):
+        self.assertTrue(self.mi_clase_obj.Encuentra([1,2,3,4],4))
+
 if __name__ == '__main__':
     unittest.main()
